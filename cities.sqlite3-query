@@ -1,0 +1,5 @@
+-- database: ./weather.db
+
+SELECT * FROM forecast;
+
+SELECT * FROM cities;

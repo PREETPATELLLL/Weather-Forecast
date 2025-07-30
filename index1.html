@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App with Map & Favorites</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+</head>
+<body background="bg.jpg">
+
+    <div class="container">
+        <h1>🌦 Weather App with Map</h1>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <input type="text" id="city_input" placeholder="Enter city name">
+            <button id="searchBtn">🔍 Search</button>
+            <button id="locationBtn">📍 Current Location</button>
+            
+        </div>
+
+        <!-- Weather Info -->
+        <div class="weather-info">
+            <h2 id="locationName">--</h2>
+            <p id="dateInfo">--</p>
+            <img id="weatherIcon" src="" alt="Weather Icon">
+            <h2 id="currentTemp">--°C</h2>
+            <p id="weatherDescription">--</p>
+            <p><strong>🔥 Feels Like:</strong> <span id="feelsLikeTemp">--°C</span></p>
+   
+            <button id="saveLocationBtn">⭐ Save Location</button>
+        </div>
+
+        <h3>🌍 Weather Map</h3>
+        <div id="map"></div>
+
+        <h3>📍 Saved Locations</h3>
+        <ul id="savedLocationsList"></ul>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>
